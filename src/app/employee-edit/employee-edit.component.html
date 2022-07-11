@@ -1,0 +1,28 @@
+<div class="login-form sign-up">
+    <h1 style="text-align:center" >Edit Employee Details</h1>
+    <div class="form-card">
+        <div class="form-group h-form-style">
+            <label for="emp-name">Name</label>
+            <input mdbInput type="text" class="form-control" id="emp-name" [(ngModel)]="name" />
+            <label for="emp-desig">Designation</label>
+            <select class="form-control" id="emp-desig" [(ngModel)]="designation" >
+                <option value="Associate Engineer" selected>Associate Engineer</option>
+                <option value="Production Manager">Production Manager</option>
+                <option value="Manager">Manager</option>
+                <option value="CFO">CFO</option>
+                <option value="Engineering Manager">Engineering Manager</option>
+                <option value="Engineer">Engineer</option>
+            </select>
+            <label for="emp-mobile">Mobile Number</label>
+            <input  mdbInput type="text" class="form-control" id="emp-mobile" [(ngModel)]="mobile" />
+            <label for="emp-email">Email</label>
+            <input mdbInput type="email" class="form-control" id="emp-email" [(ngModel)]="email" />
+            <label for="emp-age">Age</label>
+            <input mdbInput type="text" class="form-control" id="emp-age" [(ngModel)]="age" />
+            <label for="emp-doj">Date of joining</label>
+            <input mdbInput type="date" class="form-control" id="emp-doj" [(ngModel)]="date" />
+        </div>
+        <button class="btn btn-primary" id="editEmployee" (click)="editEmployee()" style="margin: 10px;" >Update</button>
+        <button class="btn btn-primary" id="goBack" (click)="goBack()"  style="margin: 10px;"  >Back</button>
+    </div>
+</div>
